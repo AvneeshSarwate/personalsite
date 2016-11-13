@@ -73,7 +73,7 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/back2.jpg') no-repeat; 
+	background: url('../images/avneeshface.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -203,7 +203,7 @@ div.bl-panel-items > div > div {
 	margin: 0 auto;
 	padding-bottom: 15px;
 	font-size: 1.7em;
-	line-height: 1.8;
+	line-height: 1.1;
 }
 
 .bl-content h2 {
@@ -309,6 +309,13 @@ div.bl-panel-items > div > div {
 
 
 /* Panel Items */
+
+iframe {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border: 0;
+}
 
 .tweak {
 	padding-right: 30px;
