@@ -73,7 +73,7 @@ a:hover {
 .bl-main > section:first-child {
 	top: 0;
 	left: 0;
-	background: url('../images/avneesh_color.jpg') no-repeat; 
+	background: url('../images/avneesh_color3.jpeg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
@@ -83,7 +83,7 @@ a:hover {
 .bl-main > section:nth-child(2) {
 	top: 0;
 	left: 50%;
-	background: url('../images/performanceSetup.jpg') no-repeat; 
+	background: url('../images/setup_pic.jpg') no-repeat; 
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
