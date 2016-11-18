@@ -7,9 +7,23 @@
 <script>
 
 var sounds;
-function setup() {
+
+function preload() {
   sounds = [loadSound('vox.wav'), loadSound("pluck.wav"), loadSound("hh.wav")];
 }
+
+function setup() {
+  // for (var i = 0; i < sounds.length; i++) {
+  //   sounds[i].setVolume(0.1);
+  //   sounds[i].play();
+  // }
+
+}
+function draw() {
+  masterVolume(0.007);
+}
+
+var volSet = [false, false, false];
 
 function createArray(length) {
     var arr = new Array(length || 0),
@@ -94,11 +108,13 @@ function collide(node) {
         quad.point.y += y;
         if(node.color === quad.point.color && !touching[quad.point.ind][node.ind]) {
           colCount = (colCount + 1);
-          if(colCount % 300 == 0) {
+          if(colCount % 200 == 0) {
             //console.log(node.color);
             //console.log(x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1);
-            if(sounds[node.color].isLoaded()) 
+            if(sounds && sounds[node.color].isLoaded()) {
+              //sounds[node.color].setVolume(0.1);
               sounds[node.color].play();
+            }
           }
         }
         if(typeof quad.point.ind != 'undefined' && typeof node.ind != 'undefined'){
@@ -116,7 +132,6 @@ function collide(node) {
     return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
   };
 }
-
 
 
 </script>
