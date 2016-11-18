@@ -2,8 +2,16 @@
 <meta charset="utf-8">
 <body>
 <script src="//d3js.org/d3.v3.min.js"></script>
-<script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.min.js"></script>
 <script>
+
+var sound1;
+function setup() {
+  sound1 = loadSound('vox.wav');
+}
+
+
 
 var width = 960,
     height = 500;
@@ -12,7 +20,7 @@ var colCount = 0;
 
 var nodes = d3.range(200).map(function() { return {radius: Math.random() * 12 + 4}; }),
     root = nodes[0],
-    color = d3.scale.category10();
+    d3color = d3.scale.category10();
 
 root.radius = 0;
 root.fixed = true;
@@ -33,7 +41,7 @@ svg.selectAll("circle")
     .data(nodes.slice(1))
   .enter().append("circle")
     .attr("r", function(d) { return d.radius; })
-    .style("fill", function(d, i) { d.color = i%3; return color(i % 3); });
+    .style("fill", function(d, i) { d.color = i%3; return d3color(i % 3); });
 
 force.on("tick", function(e) {
   var q = d3.geom.quadtree(nodes),
@@ -75,8 +83,9 @@ function collide(node) {
         if(node.color === quad.point.color) {
           colCount = (colCount + 1);
           if(colCount % 100 == 0) {
-            console.log(node.color);
-            console.log(x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1);
+            //console.log(node.color);
+            //console.log(x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1);
+            sound1.play();
           }
         }
       }
