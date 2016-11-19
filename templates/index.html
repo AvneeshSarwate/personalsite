@@ -40,8 +40,6 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="static/img/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="static/img/apple-touch-icon-57-precomposed.png">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-
   </head>
 
   <body>
@@ -62,36 +60,13 @@
 								<h2>A Little About Me</h2>
 								<p>I am a software engineer, musician, and music technologist currently living in New York City. My work focuses mainly on building novel systems for live electronic music performance using commodity musical hardware.</p>
 								<p>Want to know more? Check out my <a>resume</a></p>
-								<p></p>
-								<p></p>
-								<p></p>
-								<p></p>
 								<div class="row-fluid">
-									<div class="span4"></div>
-									<div class="span12">
-										<br>
-										<br>
-									</div>
-									<div class="span12">
-										<div class="row about-us">
-											<div class="span3">
-												<h3><i class="icon-user icon-white"></i> My Musical Background </h3>
-												Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>
-											<div class="span3">
-												<h3><i class="icon-heart icon-white"></i> my technical background</h3>
-												Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>
-											<div class="span3">
-												<h3><i class="icon-fire icon-white"></i> Work Hard</h3>
-												Claritas est etiam processus dynamicus, and mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc. Parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima.
-											</div>   
-											<div class="span3">
-												<h3><i class="icon-plane icon-white"></i> Want to know More?</h3>
-												check out my resume
-											</div>   
-										</div><!-- /row-about-us -->  
-									</div><!-- /span12 -->
+									Sound
+									<label class="switch">
+									  <input id="granularVolume" type="checkbox">
+									  <div class="slider round"></div>
+									</label>
+									<div class="span12 granular"></div>
 								</div><!-- /row -->
 							</div><!-- /span12 -->
 						</div><!-- /row-fluid -->
@@ -330,5 +305,9 @@
 				Boxlayout.init();
 			});
 		</script>
+		<script src="//d3js.org/d3.v3.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/addons/p5.sound.min.js"></script>
+		<script type="text/javascript" src="static/js/granular.js"></script>
   </body>
 </html>
