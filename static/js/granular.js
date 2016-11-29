@@ -9,15 +9,10 @@ function preload() {
     loadSound("static/samples/tabla2.wav"),
     loadSound("static/samples/tabla3.wav"),
   ];
+  var element = document.getElementById("defaultCanvas0");
+  element.parentNode.removeChild(element);
 }
 
-function setup() {
-  // for (var i = 0; i < sounds.length; i++) {
-  //   sounds[i].setVolume(0.1);
-  //   sounds[i].play();
-  // }
-
-}
 function draw() {
   var vol = document.getElementById("granularVolume").checked ? 0.1 : 0;
   masterVolume(vol);
