@@ -8,6 +8,21 @@
  * Copyright 2013, Codrops
  * http://www.codrops.com
  */
+
+var tag = document.createElement('script');
+tag.id = 'iframe-demo';
+tag.src = 'https://www.youtube.com/iframe_api';
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+var players = [];
+function onYouTubeIframeAPIReady() {
+	for (var i = 0; i < 6; i++) {
+		var player = new YT.Player('player'+i);
+		players.push(player);
+	}
+}
+
 var Boxlayout = (function() {
 
 	var $el = $( '#bl-main' ),
@@ -101,6 +116,8 @@ var Boxlayout = (function() {
 			}
 			isAnimating = true;
 
+			players.forEach(function(player) {player.pauseVideo()});
+
 			var $currentPanel = $workPanels.eq( currentWorkPanel );
 			currentWorkPanel = currentWorkPanel < totalWorkPanels - 1 ? currentWorkPanel + 1 : 0;
 			var $nextPanel = $workPanels.eq( currentWorkPanel );
@@ -125,6 +142,7 @@ var Boxlayout = (function() {
 		// clicking the work panels close button: the current work panel slides down and the section scales up again
 		$closeWorkItem.on( 'click', function( event ) {
 
+			players.forEach(function(player) {player.pauseVideo()});
 			// scale up main section
 			$sectionWork.removeClass( 'bl-scale-down' );
 			$workPanelsContainer.removeClass( 'bl-panel-items-show' );
