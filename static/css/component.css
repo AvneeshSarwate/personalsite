@@ -258,7 +258,7 @@ div.bl-panel-items > div > div {
 .bl-content p {
 	margin: 0 auto;
 	padding-bottom: 15px;
-	font-size: 1.7em;
+	font-size: 1.2em;
 	line-height: 1.1;
 }
 
@@ -276,9 +276,11 @@ div.bl-panel-items > div > div {
 	font-weight: 700;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	margin: 0 0 10px 0;
-	padding-top: 20px;
 	font-size: 1.4em;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
 }
 
 .bl-content article a {
