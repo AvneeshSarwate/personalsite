@@ -1,10 +1,13 @@
 <b>Avneesh Sarwate</b>
 ===============
 
-I'm a software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) and have recently started working with [interactive graphics](#graphics). 
+I'm a software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) (for which I have some [publications](#publications)), and have recently started working with [interactive visuals](#visuals). 
 
-You can find me on [Instagram](https://www.instagram.com/avneeshsarwate/), [GitHub](https://github.com/AvneeshSarwate), [LinkedIn](https://www.linkedin.com/in/avneesh-sarwate-16172662), and [GMail](mailto:avneeshsarwate@gmail.com) 
+You can find me on [Instagram](https://www.instagram.com/avneeshsarwate/), [GitHub](https://github.com/AvneeshSarwate), [LinkedIn](https://www.linkedin.com/in/avneesh-sarwate-16172662), and [GMail](mailto:avneeshsarwate@gmail.com). 
 
+I am also a member of [Grind Arts Company](http://www.grindarts.com/) and an alumnus of the [Princeton Laptop Orchestra](http://plork.princeton.edu/index.php).
+
+And to round out this intro, my [resume](static/papers/Sarwate_Resume.pdf).
 
 ## <a id="interfaces"></a><b>Musical Interfaces</b>
 I'm interested making electronic music more "live" and building music performance interfaces that allow for powerful new modes of improvisation. In particular, I'm interested in [live coding](https://en.wikipedia.org/wiki/Live_coding) and generative music, and how to integrate them into different musical workflows. 
@@ -60,4 +63,21 @@ SkipStep is a multi-channel algorithmic step sequencer. It lets you quickly draw
 </figure>
 
 
-## <a id="graphics"></a><b>Interactive Graphics</b>
+## <a id="visuals"></a><b>Interactive Visuals</b>
+TODO
+- add computational poetry
+- add d3 collision sound thing
+- add video of maskingdance.maxpat demo to instagram 
+	- link video of actual performance?
+
+## <a id="publications"></a><b>Publications</b>
+Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceedings of the Audio Mostly 2016 (pp. 55-60). ACM. [PDF](static/papers/CalcificationAndHybridLiveCoding.pdf)
+
+Sarwate, Avneesh, and Jeff Snyder. "SkipStep: A Multi-Paradigm Touch-screen Instrument." In ICMC. 2014. [PDF](static/papers/SkipStep.pdf)
+
+Snyder, J., & Sarwate, A. (2014). Mobile Device Percussion Parade. In NIME (pp. 147-150). 
+Sarwate, Avneesh, and Rebecca Fiebrink. "Expansion on description-based design of melodies." [PDF](static/papers/MobileMarchingBand.pdf) 
+
+In Proceedings of the 9 th Artificial Intelligence and Interactive Digital Entertainment Conference. Boston. 2013. [PDF](papers/ExpansionOnDescriptionBasedDesign.pdf)
+
+Sarwate, A., & Fiebrink, R. (2013). Variator: A Creativity Support Tool for Music Composition. In NIME (pp. 279-282). [PDF](static/papers/Variator.pdf)
