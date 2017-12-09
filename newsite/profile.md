@@ -75,9 +75,8 @@ Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceeding
 
 Sarwate, Avneesh, and Jeff Snyder. "SkipStep: A Multi-Paradigm Touch-screen Instrument." In ICMC. 2014. [PDF](static/papers/SkipStep.pdf)
 
-Snyder, J., & Sarwate, A. (2014). Mobile Device Percussion Parade. In NIME (pp. 147-150). 
-Sarwate, Avneesh, and Rebecca Fiebrink. "Expansion on description-based design of melodies." [PDF](static/papers/MobileMarchingBand.pdf) 
+Snyder, J., & Sarwate, A. (2014). Mobile Device Percussion Parade. In NIME (pp. 147-150). [PDF](static/papers/MobileMarchingBand.pdf) 
 
-In Proceedings of the 9 th Artificial Intelligence and Interactive Digital Entertainment Conference. Boston. 2013. [PDF](papers/ExpansionOnDescriptionBasedDesign.pdf)
+Sarwate, Avneesh, and Rebecca Fiebrink. Expansion on description-based design of melodies. In Proceedings of the 9 th Artificial Intelligence and Interactive Digital Entertainment Conference. Boston. 2013. [PDF](papers/ExpansionOnDescriptionBasedDesign.pdf)
 
 Sarwate, A., & Fiebrink, R. (2013). Variator: A Creativity Support Tool for Music Composition. In NIME (pp. 279-282). [PDF](static/papers/Variator.pdf)
