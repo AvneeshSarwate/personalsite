@@ -1,7 +1,7 @@
 <b>Avneesh Sarwate</b>
 ===============
 
-I'm aaaa software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) (for which I have some [publications](#publications)), and have recently started working with [interactive visuals](#visuals). 
+I'm a software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) (for which I have some [publications](#publications)), and have recently started working with [interactive visuals](#visuals). 
 
 You can find me on [Instagram](https://www.instagram.com/avneeshsarwate/), [GitHub](https://github.com/AvneeshSarwate), [LinkedIn](https://www.linkedin.com/in/avneesh-sarwate-16172662), and [GMail](mailto:avneeshsarwate@gmail.com). 
 
@@ -70,6 +70,7 @@ TODO
 - add d3 collision sound thing
 - add video of maskingdance.maxpat demo to instagram 
 	- link video of actual performance?
+- add credits for software used (tufte.css, marked, The Force)
 
 ## <a id="publications"></a><b>Publications</b>
 Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceedings of the Audio Mostly 2016 (pp. 55-60). ACM. [PDF](/static/papers/CalcificationAndHybridLiveCoding.pdf)
