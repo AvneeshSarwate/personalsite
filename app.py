@@ -13,5 +13,14 @@ def newsite():
 	print "got to newsite"
 	return render_template('newsite.html')
 
+@app.route('/shader/')
+def shaderpage():
+	return render_template('force_shader.html')
+
+# @app.route('/static/The_Force_embed/starfield.mov')
+# def movieget():
+# 	print "HIT THE MOVIE URL"
+# 	return redirect('/static/The_Force_embed/starfield.mov')
+
 if __name__ == '__main__':
 	app.run(debug=True)

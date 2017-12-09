@@ -1,5 +1,3 @@
-t 121
-
 <b>Avneesh Sarwate</b>
 ===============
 
@@ -68,6 +66,7 @@ SkipStep is a multi-channel algorithmic step sequencer. It lets you quickly draw
 ## <a id="visuals"></a><b>Interactive Visuals</b>
 TODO
 - add computational poetry
+- add force-shaders example to website
 - add d3 collision sound thing
 - add video of maskingdance.maxpat demo to instagram 
 	- link video of actual performance?
