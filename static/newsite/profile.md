@@ -1,7 +1,9 @@
+t 121
+
 <b>Avneesh Sarwate</b>
 ===============
 
-I'm a software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) (for which I have some [publications](#publications)), and have recently started working with [interactive visuals](#visuals). 
+I'm aaaa software engineer and musician working with computer music and interactive art, based in ATL and NYC. In particular, I'm interested in [interfaces for musical performance](#interfaces) (for which I have some [publications](#publications)), and have recently started working with [interactive visuals](#visuals). 
 
 You can find me on [Instagram](https://www.instagram.com/avneeshsarwate/), [GitHub](https://github.com/AvneeshSarwate), [LinkedIn](https://www.linkedin.com/in/avneesh-sarwate-16172662), and [GMail](mailto:avneeshsarwate@gmail.com). 
 
