@@ -15,7 +15,7 @@ def newsite():
 
 @app.route('/shader/')
 def shaderpage():
-	return render_template('force_shader.html')
+	return render_template('force_shader.html') 
 
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
