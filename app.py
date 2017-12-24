@@ -17,6 +17,10 @@ def newsite():
 def shaderpage():
 	return render_template('force_shader.html') 
 
+@app.route('/bibletweets/', methods=['GET'])
+def bibletweets():
+	return render_template('twitterPoetry.html') 
+
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
 # 	print "HIT THE MOVIE URL"

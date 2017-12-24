@@ -12,7 +12,7 @@ And to round out this intro, my [resume](/static/papers/Sarwate_Resume.pdf).
 ## <a id="interfaces"></a><b>Musical Interfaces</b>
 I'm interested making electronic music more "live" and building music performance interfaces that allow for powerful new modes of improvisation. In particular, I'm interested in [live coding](https://en.wikipedia.org/wiki/Live_coding) and generative music, and how to integrate them into different musical workflows. 
 
-Below are demo videos of the modules of my personal performance set up. The code can be found on my [GitHub](https://github.com/AvneeshSarwate/performancePlatform/tree/dev).
+Below are demo videos of the modules of my personal performance set up. The code can be found on my [GitHub](https://github.com/AvneeshSarwate/performancePlatform).
 
 ### Quad Looper [(video)](https://www.youtube.com/watch?v=iKiAXec5VqA)
 <span class="marginnote">
