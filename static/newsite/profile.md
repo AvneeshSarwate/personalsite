@@ -63,15 +63,21 @@ SkipStep is a multi-channel algorithmic step sequencer. It lets you quickly draw
 </figure>
 
 
-## <a id="visuals"></a><b>Interactive Visuals</b>
-TODO
-- add computational poetry
-- add force-shaders example to website
-- add d3 collision sound thing
+## <a id="visuals"></a><b>Interactive Visuals (under development)</b>
+I like to play with [shaders](https://avneeshsarwate.github.io/) (works on both desktop/mobile).
+- On desktop, move around and make sound.
+- On mobile, swipe around.
+- Both versions are built using a fork of Shawn Lawson's frame work [The Force](https://github.com/avneeshsarwate/The_Force/tree/master).
+- Some other shader experiments are on [Instagram](https://www.instagram.com/avneeshsarwate/).
+
+I also like to do interactive/VJ style visuals with touchscreens and MIDI controllers, like [this](https://www.instagram.com/p/BVnhsVkHLzc/) (more examples coming soon).
+
+
+<!-- - add d3 collision sound thing
 - add video of maskingdance.maxpat demo to instagram 
 	- link video of actual performance?
 - add credits for software used (tufte.css, marked, The Force)
-
+ -->
 ## <a id="publications"></a><b>Publications</b>
 Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceedings of the Audio Mostly 2016 (pp. 55-60). ACM. [PDF](/static/papers/CalcificationAndHybridLiveCoding.pdf)
 
@@ -82,3 +88,6 @@ Snyder, J., & Sarwate, A. (2014). Mobile Device Percussion Parade. In NIME (pp. 
 Sarwate, Avneesh, and Rebecca Fiebrink. Expansion on description-based design of melodies. In Proceedings of the 9 th Artificial Intelligence and Interactive Digital Entertainment Conference. Boston. 2013. [PDF](papers/ExpansionOnDescriptionBasedDesign.pdf)
 
 Sarwate, A., & Fiebrink, R. (2013). Variator: A Creativity Support Tool for Music Composition. In NIME (pp. 279-282). [PDF](/static/papers/Variator.pdf)
+
+
+<footer>*This site was built using [Marked](https://github.com/chjj/marked) and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>
