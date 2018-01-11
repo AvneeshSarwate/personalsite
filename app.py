@@ -6,7 +6,7 @@ Compress(app)
 
 @app.route('/')
 def home():
-	return render_template('index.html')
+	return render_template('newsite.html')
 
 @app.route('/newsite/', methods=['GET'])
 def newsite():
