@@ -14,7 +14,7 @@ $(function() {
 				rawString = rawString.replace(new RegExp("<", 'g'), ">")
 				$("#renderedMarkdown").html(marked(renderString));
 				$("#rawMarkdown").html(rawString);
-				console.log("print "+i+" lines "+renderString.length);
+				$("a").each(function(ind, elem) {if(elem.href.indexOf("#") < 0){elem.target = "_blank" }});
 			}, stepTimes[i-1]);
 		}
 	});
