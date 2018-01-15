@@ -90,4 +90,4 @@ Sarwate, Avneesh, and Rebecca Fiebrink. Expansion on description-based design of
 Sarwate, A., & Fiebrink, R. (2013). Variator: A Creativity Support Tool for Music Composition. In NIME (pp. 279-282). [PDF](/static/papers/Variator.pdf)
 
 
-<footer>*This site was built using [Marked](https://github.com/chjj/marked) and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>
+<footer>*This site was built using  [jQuery](http://jquery.com/), [Marked](https://github.com/chjj/marked), and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>
