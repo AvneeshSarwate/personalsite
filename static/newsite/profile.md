@@ -32,7 +32,7 @@ This module lets you quickly save and replay sets of loops (or "scenes" as they 
 
 ### Musical Live Coding [(video)](https://www.youtube.com/watch?v=R64AoH1WEOo)
 <span class="marginnote">
-This module is a live-coding framework that lets you algorithmically generate and play melodies. It links with the Quad Looper and Scene/Slider modules so you can even manipulate melodies you have recorded on the looper. My My [paper](/static/papers/CalcificationAndHybridLiveCoding.pdf) on live-coding goes into more detail about how I plan to integrate live-coding into current and future modules of my performance setup.
+This module is a live-coding framework that lets you algorithmically generate and play melodies. It also links with the Quad Looper and Scene/Slider modules to let you manipulate melodies you have recorded using the looper. My [paper](/static/papers/CalcificationAndHybridLiveCoding.pdf) on live-coding goes into more detail about how I plan to integrate live-coding into current and future modules of my performance setup.
 </span>
 <figure>
 	<img src="/static/img/live_coding.jpg" alt="Live Coding Image">
@@ -64,11 +64,12 @@ SkipStep is a multi-channel algorithmic step sequencer. It lets you quickly draw
 
 
 ## <a id="visuals"></a><b>Interactive Visuals (under development)</b>
-I like to play with [shaders](https://avneeshsarwate.github.io/) (works on both desktop/mobile).
-- On desktop, move around and make sound.
-- On mobile, swipe around.
-- Both versions are built using a fork of Shawn Lawson's frame work [The Force](https://github.com/avneeshsarwate/The_Force/tree/master).
-- Some other shader experiments are on [Instagram](https://www.instagram.com/avneeshsarwate/).
+I like to play with [shaders](https://avneeshsarwate.github.io/)<sup>1</sup>. 
+<span class="marginnote">
+<sup>1</sup> Works on both desktop (mic/camera input) and mobile (touch input). Both versions are built using a fork of Shawn Lawson's frame work [The Force](https://github.com/avneeshsarwate/The_Force/tree/master). Some other shader experiments are on [Instagram](https://www.instagram.com/avneeshsarwate/).
+</span>
+
+I'm also into [p5](https://p5js.org/), and like making things like [this](https://avneeshsarwate.github.io/p5Experiments/?optical), [this](https://avneeshsarwate.github.io/p5Experiments/?bodygrav), and [this](https://avneeshsarwate.github.io/p5Experiments/?hulldraw).
 
 I also like to do interactive/VJ style visuals with touchscreens and MIDI controllers, like [this](https://www.instagram.com/p/BVnhsVkHLzc/) (more examples coming soon).
 
