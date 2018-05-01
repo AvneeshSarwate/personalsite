@@ -21,6 +21,10 @@ def shaderpage():
 def bibletweets():
 	return render_template('twitterPoetry.html') 
 
+@app.route('/paradiselost/', methods=['GET'])
+def paradiselost():
+    return render_template('paradiselost.html') 
+
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
 # 	print "HIT THE MOVIE URL"

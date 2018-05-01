@@ -80,6 +80,8 @@ I also like to do interactive/VJ style visuals with touchscreens and MIDI contro
 - add credits for software used (tufte.css, marked, The Force)
  -->
 ## <a id="publications"></a><b>Publications</b>
+Sarwate, A, Ryan Rose, Jason Freeman, and Jack Armitage. (2018). Performance Systems for Live Coders and Non-Coders. In NIME (To appear). [PDF](/static/papers/LiveCodersAndNonCoders.pdf) 
+
 Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceedings of the Audio Mostly 2016 (pp. 55-60). ACM. [PDF](/static/papers/CalcificationAndHybridLiveCoding.pdf)
 
 Sarwate, Avneesh, and Jeff Snyder. "SkipStep: A Multi-Paradigm Touch-screen Instrument." In ICMC. 2014. [PDF](/static/papers/SkipStep.pdf)
