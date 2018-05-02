@@ -1,4 +1,4 @@
-<b>Paradise Lost</b>
+<b>Electronic Audiovisual Improvisation</b>
 ===============
 <div>[Back to main page](http://www.avneeshsarwate.com)</div>
 
@@ -9,9 +9,7 @@ In the spring of 2018 we put on a small scale production as part of the [LPAC Ro
 
 Workshop footage
 - [ChromaKeying](https://www.instagram.com/p/BVjCoopAx3q/): This video demonstrates some of the texture-on-texture effects that were applied to dancers during the piece.
-- [Self-Layering](https://www.instagram.com/p/BggvgPLjZc9): Demonstrating a self-layering effect using chromakeying and wave-displacement of the original image
-- [Pixelation](https://www.instagram.com/p/Bghe61Hhz4q): Experiments with applying pixelation and noise to colors on a dark background. 
-- [Promo Reel](https://www.youtube.com/watch?v=adZlVNJmr44) This was a promo reel made from the workshop that highlighted some of the types of effects (chromakeying, video-delay, kaleidescoping) that were used with the dancers. 
+-  [Promo Reel](https://www.youtube.com/watch?v=adZlVNJmr44) This was a promo reel made from the workshop that highlighted some of the types of effects (chromakeying, video-delay, kaleidescoping) that were used with the dancers. 
 - 
 
 Live Examples
