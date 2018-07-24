@@ -3,19 +3,23 @@ var rawMarkdownLines
 $(function() {
 	console.log("test js");
 	$.get("/static/newsite/profile.md", function(data){
-		rawMarkdown = data;
-		rawMarkdownLines = data.split(" ");
-		// $("#renderedMarkdown").html(marked(rawMarkdown));
-		var stepTimes = renderTimes(rawMarkdownLines.length);
-		for(let i = 1; i <= rawMarkdownLines.length; i++){
-			setTimeout(function(){
-				var renderString = rawMarkdownLines.slice(0, i).join(" ");
-				var rawString = rawMarkdownLines.slice(i, rawMarkdownLines.length).join(" ");
-				rawString = rawString.replace(new RegExp("<", 'g'), ">")
-				$("#renderedMarkdown").html(marked(renderString));
-				$("#rawMarkdown").html(rawString);
-				$("a").each(function(ind, elem) {if(elem.href.indexOf("#") < 0){elem.target = "_blank" }});
-			}, stepTimes[i-1]);
+		if(window.location.href.indexOf("#") < 0) {
+			rawMarkdown = data;
+			rawMarkdownLines = data.split(" ");
+			// $("#renderedMarkdown").html(marked(rawMarkdown));
+			var stepTimes = renderTimes(rawMarkdownLines.length);
+			for(let i = 1; i <= rawMarkdownLines.length; i++){
+				setTimeout(function(){
+					var renderString = rawMarkdownLines.slice(0, i).join(" ");
+					var rawString = rawMarkdownLines.slice(i, rawMarkdownLines.length).join(" ");
+					rawString = rawString.replace(new RegExp("<", 'g'), ">")
+					$("#renderedMarkdown").html(marked(renderString));
+					$("#rawMarkdown").html(rawString);
+					$("a").each(function(ind, elem) {if(elem.href.indexOf("#") < 0){elem.target = "_blank" }});
+				}, stepTimes[i-1]);
+			}
+		} else {
+			$("#renderedMarkdown").html(marked(data));
 		}
 	});
 });

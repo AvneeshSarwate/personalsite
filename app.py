@@ -23,11 +23,11 @@ def bibletweets():
 
 @app.route('/paradiselost/', methods=['GET'])
 def paradiselost():
-    return render_template('paradiselost.html') 
+    return render_template('subpage.html') 
 
 @app.route('/electronicimprovisation/', methods=['GET'])
 def electronicimprovisation():
-    return render_template('electronicimprovisation.html') 
+    return render_template('subpage.html') 
 
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
