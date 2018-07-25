@@ -29,6 +29,14 @@ def paradiselost():
 def electronicimprovisation():
     return render_template('subpage.html') 
 
+@app.route('/publications/', methods=['GET'])
+def publications():
+    return render_template('subpage.html') 
+
+@app.route('/interactivevisuals/', methods=['GET'])
+def interactivevisuals():
+    return render_template('subpage.html') 
+
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
 # 	print "HIT THE MOVIE URL"
