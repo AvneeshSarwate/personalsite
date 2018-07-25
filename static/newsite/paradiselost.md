@@ -3,7 +3,7 @@
 <div>[Back to main page](http://www.avneeshsarwate.com#)</div>
 
 
-As part of my work with [Grind Arts Company](http://www.grindarts.com/), I have been involved in the development of an immersive experience based on the story of Paradise Lost, and much of my work has involved creating real-time graphics that complement the motions of dancers.
+As part of my work with [Grind Arts Company](http://www.grindarts.com/), I have been involved in the development of an immersive experience based on Milton's Paradise Lost, and much of my work has involved creating real-time graphics that complement the motions of dancers.
 
 In the spring of 2018 we put on a small scale production as part of the [LPAC Rough Draft Festival](http://www.lpac.nyc/rough-draft-2018). Though official recordings of the performance have not been released yet, below are some recordings from the development workshop, as well as live examples (in browser, desktop only) of some of the interactive graphics used. 
 
