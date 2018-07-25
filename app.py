@@ -37,6 +37,16 @@ def publications():
 def interactivevisuals():
     return render_template('subpage.html') 
 
+@app.route('/art/', methods=['GET'])
+def art():
+    return render_template('subpage.html') 
+
+@app.route('/greyprocessingunit/', methods=['GET'])
+def greyprocessingunit():
+    return render_template('subpage.html') 
+
+
+
 # @app.route('/static/The_Force_embed/starfield.mov')
 # def movieget():
 # 	print "HIT THE MOVIE URL"

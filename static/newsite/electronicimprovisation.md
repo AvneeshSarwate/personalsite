@@ -1,4 +1,4 @@
-<b>Musica Performance Interfaces</b>
+<b>Musical Performance Interfaces</b>
 ===============
 <div>[Back to main page](http://www.avneeshsarwate.com#)</div>
 
