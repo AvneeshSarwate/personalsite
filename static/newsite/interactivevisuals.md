@@ -11,6 +11,8 @@ I'm also into [p5](https://p5js.org/), and like making things like [this](https:
 
 I also like to do interactive/VJ style visuals with touchscreens and MIDI controllers, like [this](https://www.instagram.com/p/BVnhsVkHLzc/), [this](https://youtu.be/mZgzgJ57O3E?t=40m32s), [this](https://www.youtube.com/watch?v=mZgzgJ57O3E&feature=youtu.be&t=49m31s), and [this](https://www.dropbox.com/s/q0jvuotvyzucf0x/2018-03-27%2013.52.52.mov?dl=0).
 
-Some of my interactive visuals work was used in [Paradise Lost](/paradiselost#) 
+Some of my interactive visuals work was used in [Paradise Lost](/paradiselost#).
+
+My research interests have recently grown to include music-responsive graphics and "visual instruments," so this page will be growing in the near future. 
 
 <footer>*This site was built using  [jQuery](http://jquery.com/), [Marked](https://github.com/chjj/marked), and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>

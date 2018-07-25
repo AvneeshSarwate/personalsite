@@ -9,7 +9,7 @@ An immersive musical theater performance for which I developed interactive graph
 An ongoing series of greyscale [fragment shader](https://thebookofshaders.com/01/) animations. [Project page](/greyprocessingunit#)
 
 <!-- ### <b>SoundCage</b>
-An interactive music installation developed with Ryan Rose. [Project page](/soundcage) -->
+A prototype interactive music installation developed with Ryan Rose. [Project page](/soundcage) -->
 
 ### <b>Interactive Graphics Experiments</b>
 Various prototypes and experiments. [Project page](/interactivevisuals#)
