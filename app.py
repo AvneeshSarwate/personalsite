@@ -43,7 +43,7 @@ def art():
 
 @app.route('/greyprocessingunit/', methods=['GET'])
 def greyprocessingunit():
-    return render_template('subpage.html') 
+    return render_template('subpage.html')  
 
 
 

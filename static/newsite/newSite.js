@@ -2,7 +2,8 @@ var rawMarkdown;
 var rawMarkdownLines
 $(function() {
 	console.log("test js");
-	$.get("/static/newsite/profile.md", function(data){
+	var siteVersion = window.location.href.indexOf("newSite".toLowerCase()) < 0 ? "profile" : "profile2";
+	$.get("/static/newsite/"+siteVersion+".md", function(data){
 		if(window.location.href.indexOf("#") < 0) {
 			rawMarkdown = data;
 			rawMarkdownLines = data.split(" ");
@@ -21,6 +22,7 @@ $(function() {
 		} else {
 			$("#renderedMarkdown").html(marked(data));
 		}
+		if(window.location.href.indexOf("#") < 0) window.location.href = window.location.href+"#";
 	});
 });
 
