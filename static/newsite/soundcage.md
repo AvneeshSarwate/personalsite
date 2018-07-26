@@ -8,7 +8,7 @@ SoundCage is a prototype of an interactive music installation developed with [Ry
     <img src="/static/img/soundcageside.jpg" alt="SoundCage side view">
 </figure>
 
-We were interested in creating a multi-directional, interactive sonic experience that could be easily built and moved around. Given these considerations, we decided to create an installation inspired by belltowers. We developed sensor/actuator packages and used them as control inputs to a musical system in a PVC framed space. Using strings as guidelines for ultrasonic distance sensors, visitors moved throughout the space, varying the tolling of bells from transduction speakers by moving closer and further away from the sensors. When certain ratios of distances between different distance sensors were hit, the speakers would play excerpts of Sederunt Principes by Perotin.
+We were interested in creating a multi-directional, interactive sonic experience that could be easily built and moved around. Given these considerations, we decided to create an installation inspired by belltowers. We developed sensor/actuator packages and used them as control inputs to a musical system in a PVC framed space. Visitors moved throughout the space, varying the speed of the tolling of bells by moving closer and further away from the sensors. When certain ratios of distances between different distance sensors were hit, the speakers would play excerpts of Sederunt Principes by Perotin.
 
 <!-- <figure> -->
 <video width="100%" controls>
