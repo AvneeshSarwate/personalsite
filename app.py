@@ -4,6 +4,11 @@ from flask_compress import Compress
 app = Flask(__name__)
 Compress(app)
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Accept-Ranges', 'bytes')
+    return response
+
 @app.route('/')
 def home():
 	return render_template('newsite.html') #previously index.html

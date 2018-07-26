@@ -25,25 +25,25 @@ I plan to add more shaders to this series, and to possibly add browser-based int
 
 All of these shaders were prototyped in and are displayed using my [fork](https://github.com/AvneeshSarwate/The_Force) of Shawn Lawson's [The Force](https://github.com/shawnlawson/The_Force). 
 
-<video width="55%" controls>
+<video width="55%" controls="true">
     <source src="/static/img/greyProcessingUnit/liquidGridSmooth.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/liquidGridSmooth.mp4" type="video/mp4"></source>
     <source src="/static/img/greyProcessingUnit/liquidGridSmooth2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
-<video width="55%" controls>
+<video width="55%" controls="true">
     <source src="/static/img/greyProcessingUnit/plaidWarp.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/plaidWarp.mp4" type="video/mp4"></source>
     <source src="/static/img/greyProcessingUnit/plaidWarp2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
-<video width="55%" controls>
+<video width="55%" controls="true">
     <source src="/static/img/greyProcessingUnit/inkSpiral.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/inkSpiral.mp4" type="video/mp4"></source>
     <source src="/static/img/greyProcessingUnit/inkSpiral2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
-<video width="55%" controls>
+<video width="55%" controls="true">
     <source src="/static/img/greyProcessingUnit/mapTears.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/mapTears.mp4" type="video/mp4"></source>
     <source src="/static/img/greyProcessingUnit/mapTears2.mp4" type="video/mp4"></source>
