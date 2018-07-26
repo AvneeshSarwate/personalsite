@@ -4,9 +4,9 @@
 
 This is an ongoing series of greyscale [fragment shaders](https://thebookofshaders.com/01/).
 
-This series began as an investigation into (more of a blind tinkering with, honestly) procedurally generated visuals at the border of "moving objects" and "textures". I was interested in creating moving images in which the observer's eye would be drawn to purposeful motion, but the moving entities would be hard to semantically distinguish from the "background". I've also been interested [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) and generative art, and I challenged myself to keep the shaders as "simple" as possible - I didn't use any pre-rendered textures, and the only uniforms provided to the shader (other than UV coordinates) were time and a single random walk value. For each shader, two links are provided - the live rendering and the file's Git history. 
+This series began as an investigation into (more of a blind tinkering with, honestly) procedurally generated visuals at the border of "moving objects" and "textures". I was interested in creating moving images in which the observer's eye would be drawn to purposeful motion, but the moving entities would be hard to semantically distinguish from the "background". I've also been interested [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) and generative art, and I challenged myself to keep the shaders as "simple" as possible - I didn't use any pre-rendered textures, and the only uniforms provided to the shader (other than UV coordinates) were time and a single random walk value. For each shader, two links are provided - the live rendering and the file's Git history. Since the animations currently do not work on mobile, some static rendered video clips are included at the end of the page.
 
-### <b>Shaders</b>
+### <b>Shaders (Desktop Chrome only)</b>
 - [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl)
 - [Shader 2](https://avneeshsarwate.github.io/The_Force/?circleSlices) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/circleSlices.glsl)
 - [Shader 3](https://avneeshsarwate.github.io/The_Force/?wanderingBlotches) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/wanderingBlotches.glsl)
@@ -24,5 +24,26 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
 All of these shaders were prototyped in and are displayed using my [fork](https://github.com/AvneeshSarwate/The_Force) of Shawn Lawson's [The Force](https://github.com/shawnlawson/The_Force). 
+
+<video width="55%" controls>
+    <source src="/static/img/greyProcessingUnit/liquidGridSmooth.ogv" type="video/ogg"></source>
+    <source src="/static/img/greyProcessingUnit/liquidGridSmooth.mp4" type="video/mp4"></source>
+    Your browser does not support the video tag.
+</video>
+<video width="55%" controls>
+    <source src="/static/img/greyProcessingUnit/plaidWarp.ogv" type="video/ogg"></source>
+    <source src="/static/img/greyProcessingUnit/plaidWarp.mp4" type="video/mp4"></source>
+    Your browser does not support the video tag.
+</video>
+<video width="55%" controls>
+    <source src="/static/img/greyProcessingUnit/inkSpiral.ogv" type="video/ogg"></source>
+    <source src="/static/img/greyProcessingUnit/inkSpiral.mp4" type="video/mp4"></source>
+    Your browser does not support the video tag.
+</video>
+<video width="55%" controls>
+    <source src="/static/img/greyProcessingUnit/mapTears.ogv" type="video/ogg"></source>
+    <source src="/static/img/greyProcessingUnit/mapTears.mp4" type="video/mp4"></source>
+    Your browser does not support the video tag.
+</video>
 
 <footer>*This site was built using  [jQuery](http://jquery.com/), [Marked](https://github.com/chjj/marked), and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>
