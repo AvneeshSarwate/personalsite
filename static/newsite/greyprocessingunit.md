@@ -28,21 +28,25 @@ All of these shaders were prototyped in and are displayed using my [fork](https:
 <video width="55%" controls>
     <source src="/static/img/greyProcessingUnit/liquidGridSmooth.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/liquidGridSmooth.mp4" type="video/mp4"></source>
+    <source src="/static/img/greyProcessingUnit/liquidGridSmooth2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
 <video width="55%" controls>
     <source src="/static/img/greyProcessingUnit/plaidWarp.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/plaidWarp.mp4" type="video/mp4"></source>
+    <source src="/static/img/greyProcessingUnit/plaidWarp2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
 <video width="55%" controls>
     <source src="/static/img/greyProcessingUnit/inkSpiral.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/inkSpiral.mp4" type="video/mp4"></source>
+    <source src="/static/img/greyProcessingUnit/inkSpiral2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
 <video width="55%" controls>
     <source src="/static/img/greyProcessingUnit/mapTears.ogv" type="video/ogg"></source>
     <source src="/static/img/greyProcessingUnit/mapTears.mp4" type="video/mp4"></source>
+    <source src="/static/img/greyProcessingUnit/mapTears2.mp4" type="video/mp4"></source>
     Your browser does not support the video tag.
 </video>
 
