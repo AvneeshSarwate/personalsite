@@ -8,8 +8,8 @@ An immersive musical theater performance for which I developed interactive graph
 ### <b>GPU (Grey Processing Unit)</b>
 An ongoing series of greyscale [fragment shader](https://thebookofshaders.com/01/) animations. [Project page](/greyprocessingunit#)
 
-<!-- ### <b>SoundCage</b>
-A prototype interactive music installation developed with Ryan Rose. [Project page](/soundcage) -->
+### <b>SoundCage</b>
+A prototype interactive music installation developed with Ryan Rose. [Project page](/soundcage)
 
 ### <b>Interactive Graphics Experiments</b>
 Various prototypes and experiments. [Project page](/interactivevisuals#)

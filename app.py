@@ -43,6 +43,10 @@ def art():
 
 @app.route('/greyprocessingunit/', methods=['GET'])
 def greyprocessingunit():
+    return render_template('subpage.html') 
+
+@app.route('/soundcage/', methods=['GET'])
+def soundcage():
     return render_template('subpage.html')  
 
 
