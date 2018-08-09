@@ -4,7 +4,7 @@
 
 This is an ongoing series of greyscale [fragment shaders](https://thebookofshaders.com/01/).
 
-This series began as an investigation into (more of a blind tinkering with, honestly) procedurally generated visuals at the border of "moving objects" and "textures". I was interested in creating moving images in which the observer's eye would be drawn to purposeful motion, but the moving entities would be hard to semantically distinguish from the "background". I've also been interested [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) and generative art, and I challenged myself to keep the shaders as "simple" as possible - I didn't use any pre-rendered textures, and the only uniforms provided to the shader (other than UV coordinates) were time and a single random walk value. For each shader, two links are provided - the live rendering and the file's Git history. Since the animations currently do not work on mobile, some static rendered video clips are included at the end of the page.
+This series began as an investigation into (more of a blind tinkering with, honestly) procedurally generated visuals at the border of "moving objects" and "textures". I was interested in creating moving images in which the observer's eye would be drawn to purposeful motion, but the moving entities would be hard to semantically distinguish from the "background". I've also been interested [Kolmogorov Complexity](https://en.wikipedia.org/wiki/Kolmogorov_complexity) and generative art, and I challenged myself to keep the shaders "simple" - I didn't use any pre-rendered textures, and the only uniforms provided to the shader (other than UV coordinates) were time, a single random walk value, and the previously drawn frame as a texture (allowing for feedback effects). For each shader, two links are provided - the live rendering and the file's Git history. Since the animations currently do not work on mobile, some static rendered video clips are included at the end of the page.
 
 ### <b>Shaders (Desktop Chrome only)</b>
 - [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl)
@@ -17,6 +17,8 @@ This series began as an investigation into (more of a blind tinkering with, hone
 - [Shader 8](https://avneeshsarwate.github.io/The_Force/?rainExperiments) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/rainExperiments.glsl)
 - [Shader 9](https://avneeshsarwate.github.io/The_Force/?mapTears) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/mapTears.glsl)
 - [Shader 10](https://avneeshsarwate.github.io/The_Force/?tadpoleClouds) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/tadpoleClouds.glsl)
+- [Shader 11](https://avneeshsarwate.github.io/The_Force/?moshmosh) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/moshmosh.glsl)
+- [Shader 12](https://avneeshsarwate.github.io/The_Force/?flowbox) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/flowbox.glsl)
 
 
 Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing you to live code it. Some utility functions common across the different shaders are defined [here](https://github.com/AvneeshSarwate/The_Force/blob/master/shaders/header.frag).
