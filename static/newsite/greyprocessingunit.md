@@ -19,6 +19,7 @@ This series began as an investigation into (more of a blind tinkering with, hone
 - [Shader 10](https://avneeshsarwate.github.io/The_Force/?tadpoleClouds) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/tadpoleClouds.glsl)
 - [Shader 11](https://avneeshsarwate.github.io/The_Force/?moshmosh) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/moshmosh.glsl)
 - [Shader 12](https://avneeshsarwate.github.io/The_Force/?flowbox) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/flowbox.glsl)
+- [Shader 13](https://avneeshsarwate.github.io/The_Force/?gridshred) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/gridshred.glsl)
 
 
 Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing you to live code it. Some utility functions common across the different shaders are defined [here](https://github.com/AvneeshSarwate/The_Force/blob/master/shaders/header.frag).
