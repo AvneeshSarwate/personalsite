@@ -13,7 +13,7 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 
 ### <b>Shaders (Desktop Chrome only)</b>
 - [Shader 0](https://avneeshsarwate.github.io/The_Force/?dancingFabric) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/dancingFabric.glsl)
-- [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl)
+- [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl) (Interacts with  mouse clicks and webcam input)
 - [Shader 2](https://avneeshsarwate.github.io/The_Force/?circleSlices) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/circleSlices.glsl)
 - [Shader 3](https://avneeshsarwate.github.io/The_Force/?wanderingBlotches) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/wanderingBlotches.glsl)
 - [Shader 4](https://avneeshsarwate.github.io/The_Force/?warpFeedback) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/warpFeedback.glsl)
@@ -29,6 +29,7 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 14](https://avneeshsarwate.github.io/The_Force/?rolltide) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/rolltide.glsl)
 - [Shader 15](https://avneeshsarwate.github.io/The_Force/?creature1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/creature1.glsl)
 - [Shader 16](https://avneeshsarwate.github.io/The_Force/?gridlinewaves) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/gridlinewaves.glsl)
+- [Shader 17](https://avneeshsarwate.github.io/The_Force/?ballshine) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/ballshine.glsl) (interacts with mouse clicks, mouse movement and webcam input - click to start interaction)
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
