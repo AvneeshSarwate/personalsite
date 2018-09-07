@@ -30,6 +30,8 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 15](https://avneeshsarwate.github.io/The_Force/?creature1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/creature1.glsl)
 - [Shader 16](https://avneeshsarwate.github.io/The_Force/?gridlinewaves) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/gridlinewaves.glsl)
 - [Shader 17](https://avneeshsarwate.github.io/The_Force/?pixelsink) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/pixelsink.glsl) 
+- [Shader 18](https://avneeshsarwate.github.io/The_Force/?cellDance) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/cellDance.glsl) 
+- [Shader 19](https://avneeshsarwate.github.io/The_Force/?fogShip) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fogShip.glsl) 
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
