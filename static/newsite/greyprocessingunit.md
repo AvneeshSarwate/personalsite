@@ -33,6 +33,9 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 18](https://avneeshsarwate.github.io/The_Force/?cellDance) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/cellDance.glsl) 
 - [Shader 19](https://avneeshsarwate.github.io/The_Force/?fogShip) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fogShip.glsl) 
 - [Shader 20](https://avneeshsarwate.github.io/The_Force/?lightLine) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/lightLine.glsl) 
+- [Shader 21](https://avneeshsarwate.github.io/The_Force/?liquidMaze) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/liquidMaze.glsl)
+- (STROBE WARNING) [Shader 22](https://avneeshsarwate.github.io/The_Force/?magicPortals) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/magicPortals.glsl)
+
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
