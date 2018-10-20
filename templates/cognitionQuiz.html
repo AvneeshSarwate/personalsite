@@ -13,12 +13,12 @@
 
         <div id="targetMelodyInstruction" class="target">Hit play to start listening to the audio file - it will play a single melody 4 times</div>
         <audio id="targetMelody" class="target" controls>
-            <source src="/static/cognitionListeningTestFiles/autograde1.mp3" type="audio/mp3">
+            <source type="audio/mp3">
         </audio>
 
-        <div id="queryMelodyInstruction" class="query">Hit play to start listening to the second audio file - ti will play a single melody once</div>
+        <div id="queryMelodyInstruction" class="query">Hit play to start listening to the second audio file - it will play a single melody once</div>
         <audio id="queryMelody" class="query" controls>
-            <source src="/static/cognitionListeningTestFiles/pytest.mp3" type="audio/mp3">
+            <source type="audio/mp3">
         </audio>
 
         <form id="questionForm" class="questionForm">
@@ -40,8 +40,13 @@
 
     </div>
     <script type="text/javascript">
-        $(".query").hide();
-        $(".questionForm").hide();
+        var questionIndex = 0;
+        var answers = {};
+        var questionSounds = [
+            {target: "/static/cognitionListeningTestFiles/autograde1.mp3", query: "/static/cognitionListeningTestFiles/pytest.mp3"},
+            {query: "/static/cognitionListeningTestFiles/autograde1.mp3", target: "/static/cognitionListeningTestFiles/pytest.mp3"},
+        ];
+
         $("#targetMelody").on('ended', function(evt){
             $(".target").hide();
             $(".query").show();
@@ -51,17 +56,32 @@
             $(".questionForm").show();
         });
         $("#choiceSubmit").on('click', function(evt){
-            // get all the inputs into an array.
             var $inputs = $('#questionForm :input');
+            var choice;
 
-            // not sure if you wanted this, but I thought I'd add it.
-            // get an associative array of just the values.
-            var values = {};
             $inputs.each(function() {
-                values[this.name] = $(this).val();
+                if(this.checked) choice = this.value;
             });
-            console.log(values);
+
+            answers[questionIndex] = choice;
+            
+            questionIndex++;
+            incrementQuestion(questionIndex)
         });
+
+        function incrementQuestion(qIndex){
+            $('#questionForm :input').prop("checked", false)
+            $(".query").hide();
+            $(".questionForm").hide();
+            $("#questionTitle").html("Question " + (qIndex+1));
+            $('.target').show();
+            $("#targetMelody").children()[0].src = questionSounds[qIndex].target;
+            $("#targetMelody")[0].load();
+            $("#queryMelody").children()[0].src = questionSounds[qIndex].query;
+            $("#queryMelody")[0].load();
+        }
+
+        incrementQuestion(0);
     </script>
   </body>
 </html>
