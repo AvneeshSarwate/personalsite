@@ -60,6 +60,10 @@ def greyprocessingunit():
 def soundcage():
     return render_template('subpage.html')  
 
+@app.route('/cognitionExperiment/', methods=['GET'])
+def cognitionexperiment():
+    return render_template('cognitionQuiz.html') 
+
 @app.route("/static/img/greyProcessingUnit/<filename>")
 def video(filename):
     path = "static/img/greyProcessingUnit/" + filename
