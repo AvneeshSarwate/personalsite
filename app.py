@@ -8,6 +8,8 @@ import json
 MB = 1 << 20
 BUFF_SIZE = 10 * MB
 
+quizResults = []
+
 app = Flask(__name__)
 Compress(app)
 
@@ -74,6 +76,23 @@ def cognitionexperimentURLs():
     urls['questions'].append({'targets': [pytest]*4, 'query': autograde})
     urls['questions'].append({'targets': [autograde]*4, 'query': pytest})
     return json.dumps(urls)
+
+@app.route('/cognitionTestResults/', methods=['POST'])
+def cognitionTestResults():
+    print request.form
+    open("quizResults.txt", "a+").write("\n" + json.dumps(request.form) + "\n")
+    quizResults.append(request.form)
+    return "success"
+
+
+@app.route('/getAllCognitionTestResults/', methods=['GET'])
+def getAllCognitionTestResults():
+    return json.dumps(quizResults)
+
+@app.route('/getAllCognitionTestResultsFile/', methods=['GET'])
+def getAllCognitionTestResultsFile():
+    results = open("quizResults.txt").read()
+    return results
 
 @app.route("/static/img/greyProcessingUnit/<filename>")
 def video(filename):
