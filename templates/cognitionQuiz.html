@@ -39,7 +39,36 @@
         </div>
 
     </div>
-    <script type="text/javascript">
+    <script id="audioProcessingScript" type="text/javascript">
+        var arrayOf = n => Array.from(new Array(n), () => 0);
+        var crunker = new Crunker();
+        var questionSounds = [];
+        var spacerULRs = [];
+        $.get("/getCognitionQuizQuestionUrls", function(data){
+            var questionURLS = JSON.parse(data);
+            questionSounds = arrayOf(questionURLS.length).map(e => ({}));
+            questionURLS.forEach(function(questionEntry, ind){
+                var t = questionEntry.targets;
+                var s = spacerULRs;
+
+                crunker.fetchAudio(t[0], s[0], t[1], s[1], t[2], s[2], t[3])
+                    .then(buffers => crunker.concatAudio(buffers))
+                    .then(concat => crunker.export(concat, "audio/mp3"))
+                    .then(function(exportedBuffer){
+                        questionSounds[ind].target = exportedBuffer.url;
+                    });
+
+                crunker.fetchAudio(questionEntry.query)
+                    .then(buffers => crunker.concatAudio(buffers))
+                    .then(concat => crunker.export(concat, "audio/mp3"))
+                    .then(function(exportedBuffer){
+                        questionSounds[ind].query = exportedBuffer.url;
+                    });
+            });
+        });
+    </script>
+    
+    <script id="formInteractionScript" type="text/javascript">
         var questionIndex = 0;
         var answers = {};
         var questionSounds = [
@@ -47,13 +76,21 @@
             {query: "/static/cognitionListeningTestFiles/autograde1.mp3", target: "/static/cognitionListeningTestFiles/pytest.mp3"},
         ];
 
+        jQuery.fn.visible = function() {
+            return this.css('visibility', 'visible');
+        };
+
+        jQuery.fn.invisible = function() {
+            return this.css('visibility', 'hidden');
+        };
+
         $("#targetMelody").on('ended', function(evt){
-            $(".target").hide();
-            $(".query").show();
+            $(".target").invisible();
+            $(".query").visible();
         });
         $("#queryMelody").on('ended', function(evt){
-            $(".query").hide();
-            $(".questionForm").show();
+            $(".query").invisible();
+            $(".questionForm").visible();
         });
         $("#choiceSubmit").on('click', function(evt){
             var $inputs = $('#questionForm :input');
@@ -66,15 +103,20 @@
             answers[questionIndex] = choice;
             
             questionIndex++;
-            incrementQuestion(questionIndex)
+            if(questionIndex < questionSounds.length) {
+                incrementQuestion(questionIndex);
+            }
+            else {
+                submitData();
+            }
         });
 
         function incrementQuestion(qIndex){
             $('#questionForm :input').prop("checked", false)
-            $(".query").hide();
-            $(".questionForm").hide();
+            $(".query").invisible();
+            $(".questionForm").invisible();
             $("#questionTitle").html("Question " + (qIndex+1));
-            $('.target').show();
+            $('.target').visible();
             $("#targetMelody").children()[0].src = questionSounds[qIndex].target;
             $("#targetMelody")[0].load();
             $("#queryMelody").children()[0].src = questionSounds[qIndex].query;
@@ -82,6 +124,9 @@
         }
 
         incrementQuestion(0);
+    </script>
+    <script id="audioProcessingScript" type="text/javascript">
+        
     </script>
   </body>
 </html>
