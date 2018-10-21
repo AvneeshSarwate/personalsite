@@ -43,22 +43,26 @@
         var arrayOf = n => Array.from(new Array(n), () => 0);
         var crunker = new Crunker();
         var questionSounds = [];
-        var spacerULRs = [];
-        $.get("/getCognitionQuizQuestionUrls", function(data){
-            var questionURLS = JSON.parse(data);
+        var prefix = "/static/cognitionListeningTestFiles/";
+
+        $.get("/cognitionExperimentURLs", function(data){
+            var allURLs = JSON.parse(data);
+            var questionURLS = allURLs.questions;
+            spacerURLs = allURLs.spacers;
             questionSounds = arrayOf(questionURLS.length).map(e => ({}));
             questionURLS.forEach(function(questionEntry, ind){
                 var t = questionEntry.targets;
-                var s = spacerULRs;
+                var s = spacerURLs;
+                var mergeURLS = [t[0], s[0], t[1], s[1], t[2], s[2], t[3]].map(u => prefix+u);
 
-                crunker.fetchAudio(t[0], s[0], t[1], s[1], t[2], s[2], t[3])
+                crunker.fetchAudio(...mergeURLS)
                     .then(buffers => crunker.concatAudio(buffers))
                     .then(concat => crunker.export(concat, "audio/mp3"))
                     .then(function(exportedBuffer){
                         questionSounds[ind].target = exportedBuffer.url;
                     });
 
-                crunker.fetchAudio(questionEntry.query)
+                crunker.fetchAudio(prefix + questionEntry.query)
                     .then(buffers => crunker.concatAudio(buffers))
                     .then(concat => crunker.export(concat, "audio/mp3"))
                     .then(function(exportedBuffer){
@@ -67,14 +71,14 @@
             });
         });
     </script>
-    
+
     <script id="formInteractionScript" type="text/javascript">
         var questionIndex = 0;
         var answers = {};
-        var questionSounds = [
-            {target: "/static/cognitionListeningTestFiles/autograde1.mp3", query: "/static/cognitionListeningTestFiles/pytest.mp3"},
-            {query: "/static/cognitionListeningTestFiles/autograde1.mp3", target: "/static/cognitionListeningTestFiles/pytest.mp3"},
-        ];
+        // var questionSounds = [
+        //     {target: "/static/cognitionListeningTestFiles/autograde1.mp3", query: "/static/cognitionListeningTestFiles/pytest.mp3"},
+        //     {query: "/static/cognitionListeningTestFiles/autograde1.mp3", target: "/static/cognitionListeningTestFiles/pytest.mp3"},
+        // ];
 
         jQuery.fn.visible = function() {
             return this.css('visibility', 'visible');

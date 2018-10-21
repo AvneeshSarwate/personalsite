@@ -3,6 +3,7 @@ from flask_compress import Compress
 import re
 import os
 import mimetypes
+import json
 
 MB = 1 << 20
 BUFF_SIZE = 10 * MB
@@ -63,6 +64,16 @@ def soundcage():
 @app.route('/cognitionExperiment/', methods=['GET'])
 def cognitionexperiment():
     return render_template('cognitionQuiz.html') 
+
+@app.route('/cognitionExperimentURLs/', methods=['GET'])
+def cognitionexperimentURLs():
+    pytest = 'pytest.mp3'
+    autograde = 'autograde1.mp3'
+    spacer = 'createSlice2.mp3'
+    urls = {'spacers': [spacer, spacer, spacer], 'questions': []}
+    urls['questions'].append({'targets': [pytest]*4, 'query': autograde})
+    urls['questions'].append({'targets': [autograde]*4, 'query': pytest})
+    return json.dumps(urls)
 
 @app.route("/static/img/greyProcessingUnit/<filename>")
 def video(filename):
