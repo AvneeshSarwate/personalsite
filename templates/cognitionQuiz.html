@@ -39,41 +39,6 @@
         </div>
 
     </div>
-    <script id="audioProcessingScript" type="text/javascript">
-        var arrayOf = n => Array.from(new Array(n), () => 0);
-        var crunker = new Crunker();
-        var questionSounds = [];
-        var prefix = "/static/cognitionListeningTestFiles/";
-        var questionLog = "";
-
-        $.get("/cognitionExperimentURLs", function(data){
-            var allURLs = JSON.parse(data);
-            var questionURLS = allURLs.questions;
-            questionLog = data;
-            spacerURLs = allURLs.spacers;
-            questionSounds = arrayOf(questionURLS.length).map(e => ({}));
-            questionURLS.forEach(function(questionEntry, ind){
-                var t = questionEntry.targets;
-                var s = spacerURLs;
-                var mergeURLS = [t[0], s[0], t[1], s[1], t[2], s[2], t[3]].map(u => prefix+u);
-
-                crunker.fetchAudio(...mergeURLS)
-                    .then(buffers => crunker.concatAudio(buffers))
-                    .then(concat => crunker.export(concat, "audio/mp3"))
-                    .then(function(exportedBuffer){
-                        questionSounds[ind].target = exportedBuffer.url;
-                    });
-
-                crunker.fetchAudio(prefix + questionEntry.query)
-                    .then(buffers => crunker.concatAudio(buffers))
-                    .then(concat => crunker.export(concat, "audio/mp3"))
-                    .then(function(exportedBuffer){
-                        questionSounds[ind].query = exportedBuffer.url;
-                    });
-            });
-        });
-    </script>
-
     <script id="formInteractionScript" type="text/javascript">
         var questionIndex = 0;
         var answers = [];
@@ -134,8 +99,54 @@
             $("#queryMelody")[0].load();
         }
 
-        incrementQuestion(0);
+        $(".target").invisible();
+        $(".query").invisible();
+        $(".questionForm").invisible();
+
     </script>
+    <script id="audioProcessingScript" type="text/javascript">
+        var arrayOf = n => Array.from(new Array(n), () => 0);
+        var crunker = new Crunker();
+        var questionSounds = [];
+        var prefix = "/static/cognitionListeningTestFiles/";
+        var questionLog = "";
+        var questionPromises = [];
+
+        $.get("/cognitionExperimentURLs", function(data){
+            var allURLs = JSON.parse(data);
+            var questionURLS = allURLs.questions;
+            questionLog = data;
+            spacerURLs = allURLs.spacers;
+            questionSounds = arrayOf(questionURLS.length).map(e => ({}));
+
+            questionURLS.forEach(function(questionEntry, ind){
+                var t = questionEntry.targets;
+                var s = spacerURLs;
+                var mergeURLS = [t[0], s[0], t[1], s[1], t[2], s[2], t[3]].map(u => prefix+u);
+
+                var targetPromise = crunker.fetchAudio(...mergeURLS)
+                    .then(buffers => crunker.concatAudio(buffers))
+                    .then(concat => crunker.export(concat, "audio/mp3"))
+                    .then(function(exportedBuffer){
+                        questionSounds[ind].target = exportedBuffer.url;
+                    });
+
+                var queryPromise = crunker.fetchAudio(prefix + questionEntry.query)
+                    .then(buffers => crunker.concatAudio(buffers))
+                    .then(concat => crunker.export(concat, "audio/mp3"))
+                    .then(function(exportedBuffer){
+                        questionSounds[ind].query = exportedBuffer.url;
+                    });
+
+                questionPromises.push(targetPromise);
+                questionPromises.push(queryPromise);
+            });
+            Promise.all(questionPromises).then(function(){
+                incrementQuestion(0) 
+            });
+        });
+    </script>
+
     <script id="audioProcessingScript" type="text/javascript">
         
     </script>
