@@ -79,9 +79,10 @@ def cognitionexperimentURLs():
 
 @app.route('/cognitionTestResults/', methods=['POST'])
 def cognitionTestResults():
-    print request.form
-    open("quizResults.txt", "a+").write("\n" + json.dumps(request.form) + "\n")
-    quizResults.append(request.form)
+    resultJSON = request.form['quizResult']
+    quizResults.append(resultJSON)
+    with open("quizResults.txt", "a+") as resultFile:
+        resultFile.write("\n" + resultJSON + "\n")
     return "success"
 
 

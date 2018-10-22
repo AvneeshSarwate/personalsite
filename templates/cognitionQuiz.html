@@ -7,19 +7,36 @@
     <script type="text/javascript" src="/static/js/crunker.js"></script>
   </head>
   <body>
-    <!-- page content -->
-    <div>
-        <div id="questionTitle">Question 1</div>
+    <div id="instructionSpace">
+        <div id="instructionTitle" style="font-size: 24px; font-weight: 900;">Instructions</div>
+        <br>
+        <div>
+            Some instructions
+        </div>
+        <br>
+        <button id="instructionsButton" style="font-size: 20px; font-weight: 900;">Start Listening Test</button>
+    </div>
+
+    <div id="questionSpace">
+        <div id="questionTitle" style="font-size: 24px; font-weight: 900;">Question 1</div>
+        
+        <br>
 
         <div id="targetMelodyInstruction" class="target">Hit play to start listening to the audio file - it will play a single melody 4 times</div>
+        <br>
         <audio id="targetMelody" class="target" controls>
             <source type="audio/mp3">
         </audio>
 
+        <br>
+
         <div id="queryMelodyInstruction" class="query">Hit play to start listening to the second audio file - it will play a single melody once</div>
+        <br>
         <audio id="queryMelody" class="query" controls>
             <source type="audio/mp3">
         </audio>
+
+        <br>
 
         <form id="questionForm" class="questionForm">
             <p>Did the melody in the second audio file match the melody in the first audio file?</p>
@@ -37,8 +54,15 @@
         <div class="questionForm">
             <button id="choiceSubmit">Submit</button>
         </div>
-
     </div>
+
+    <div id="finishedStatement">
+        Thank you for taking our listening test! Your answers have been saved.
+    </div>
+
+
+
+
     <script id="formInteractionScript" type="text/javascript">
         var questionIndex = 0;
         var answers = [];
@@ -82,9 +106,17 @@
             }
         });
 
+        $("#instructionsButton").on('click', function(evt){
+            $("#instructionSpace").hide();
+            $("#questionSpace").show();
+        })
+
         function submitData(){
             var quizLog = JSON.stringify({'answers': answers, 'questions': JSON.parse(questionLog).questions});
-            $.post("/cognitionTestResults/", quizLog);
+            $.post("/cognitionTestResults/", {'quizResult': quizLog}, function(data){
+                $("#questionSpace").hide();
+                $("#finishedStatement").show();
+            });
         }
 
         function incrementQuestion(qIndex){
@@ -99,6 +131,8 @@
             $("#queryMelody")[0].load();
         }
 
+        $("#questionSpace").hide();
+        $("#finishedStatement").hide();
         $(".target").invisible();
         $(".query").invisible();
         $(".questionForm").invisible();
@@ -145,10 +179,6 @@
                 incrementQuestion(0) 
             });
         });
-    </script>
-
-    <script id="audioProcessingScript" type="text/javascript">
-        
     </script>
   </body>
 </html>
