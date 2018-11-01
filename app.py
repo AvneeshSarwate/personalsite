@@ -4,6 +4,7 @@ import re
 import os
 import mimetypes
 import json
+import random
 
 MB = 1 << 20
 BUFF_SIZE = 10 * MB
@@ -69,12 +70,27 @@ def cognitionexperiment():
 
 @app.route('/cognitionExperimentURLs/', methods=['GET'])
 def cognitionexperimentURLs():
-    pytest = 'pytest.mp3'
-    autograde = 'autograde1.mp3'
-    spacer = 'createSlice2.mp3'
+    spacer = 'spacer.mp3'
+    random.seed(1)
+    numQuestions = 20
     urls = {'spacers': [spacer, spacer, spacer], 'questions': []}
-    urls['questions'].append({'targets': [pytest]*4, 'query': autograde})
-    urls['questions'].append({'targets': [autograde]*4, 'query': pytest})
+    multiVoiceQuestions = random.sample([i for i in range(numQuestions)], numQuestions/2)
+    sameMelodyQuestions = random.sample([i for i in range(numQuestions)], numQuestions/2)
+    for q in range(numQuestions):
+        isMultiVoiceQuestion = q in multiVoiceQuestions
+        targets = []
+        query = ""
+        nums = [i+1 for i in range(5)]
+        sameOrDiff = "t" if q in sameMelodyQuestions else "c"
+        if isMultiVoiceQuestion:
+            targets = random.sample(nums, 4)
+            query = list(set(nums) - set(targets))[0]
+        else:
+            tq = random.sample(nums, 2)
+            targets = [tq[0]]*4
+            query = tq[1]
+        urls['questions'].append({'targets':['sound{}-t-{}.mp3'.format(t, q) for t in targets], 'query': 'sound{}-{}-{}.mp3'.format(query, sameOrDiff, q)})
+
     return json.dumps(urls)
 
 @app.route('/cognitionTestResults/', methods=['POST'])

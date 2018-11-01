@@ -11,10 +11,19 @@
         <div id="instructionTitle" style="font-size: 24px; font-weight: 900;">Instructions</div>
         <br>
         <div>
-            Some instructions
+            This is a listening test where you will be asked generally to try to remember a melody. The questions will be formatted as follows:
+            <br><br>
+            First, you will be asked to listen to an audio file that plays a single melody repeated 4 times. The melody might be repeated on the same instrument each time, or on different instruments each time. 
+            <br><br>
+            You will then be asked to listen to a second audio file, which will play a single melody only once. You will then be asked whether the melody in the second audio file was the same as the melody in the first audio file. 
+            <br><br>
         </div>
-        <br>
+
+        <span>Please enter your student ID number: <input type="text" id="studentId"> <br><br></span>
+
         <button id="instructionsButton" style="font-size: 20px; font-weight: 900;">Start Listening Test</button>
+        <br>
+        <span id="studentIdRequest"><br><br>Please enter your student ID before proceeding</span>
     </div>
 
     <div id="questionSpace">
@@ -57,7 +66,7 @@
     </div>
 
     <div id="finishedStatement">
-        Thank you for taking our listening test! Your answers have been saved.
+        Thank you for taking our listening test! Your answers have been recorded.
     </div>
 
 
@@ -66,6 +75,7 @@
     <script id="formInteractionScript" type="text/javascript">
         var questionIndex = 0;
         var answers = [];
+        var studentId = -1;
         // var questionSounds = [
         //     {target: "/static/cognitionListeningTestFiles/autograde1.mp3", query: "/static/cognitionListeningTestFiles/pytest.mp3"},
         //     {query: "/static/cognitionListeningTestFiles/autograde1.mp3", target: "/static/cognitionListeningTestFiles/pytest.mp3"},
@@ -107,12 +117,17 @@
         });
 
         $("#instructionsButton").on('click', function(evt){
-            $("#instructionSpace").hide();
-            $("#questionSpace").show();
+            studentId = parseInt($("#studentId").val());
+            if(studentId) {
+                $("#instructionSpace").hide();
+                $("#questionSpace").show();
+            } else {
+                $("#studentIdRequest").visible();
+            }
         })
 
         function submitData(){
-            var quizLog = JSON.stringify({'answers': answers, 'questions': JSON.parse(questionLog).questions});
+            var quizLog = JSON.stringify({'answers': answers, 'questions': JSON.parse(questionLog).questions, 'studentId': studentId, 'time': Date.now()});
             $.post("/cognitionTestResults/", {'quizResult': quizLog}, function(data){
                 $("#questionSpace").hide();
                 $("#finishedStatement").show();
@@ -133,6 +148,7 @@
 
         $("#questionSpace").hide();
         $("#finishedStatement").hide();
+        $("#studentIdRequest").invisible();
         $(".target").invisible();
         $(".query").invisible();
         $(".questionForm").invisible();
@@ -152,7 +168,7 @@
             questionLog = data;
             spacerURLs = allURLs.spacers;
             questionSounds = arrayOf(questionURLS.length).map(e => ({}));
-
+            
             questionURLS.forEach(function(questionEntry, ind){
                 var t = questionEntry.targets;
                 var s = spacerURLs;
