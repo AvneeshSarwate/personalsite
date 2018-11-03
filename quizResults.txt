@@ -1,4 +1,0 @@
-
-{"answers":["unsure","yes"],"questions":[{"query":"autograde1.mp3","targets":["pytest.mp3","pytest.mp3","pytest.mp3","pytest.mp3"]},{"query":"pytest.mp3","targets":["autograde1.mp3","autograde1.mp3","autograde1.mp3","autograde1.mp3"]}]}
-
-{"answers":["yes","no"],"questions":[{"query":"autograde1.mp3","targets":["pytest.mp3","pytest.mp3","pytest.mp3","pytest.mp3"]},{"query":"pytest.mp3","targets":["autograde1.mp3","autograde1.mp3","autograde1.mp3","autograde1.mp3"]}],"studentId":423423,"time":1540917773096}
