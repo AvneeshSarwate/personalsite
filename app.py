@@ -106,6 +106,7 @@ def cognitionTestResults():
     conn = psycopg2.connect(dburl, sslmode='require')
     cur = conn.cursor()
     cur.execute("INSERT INTO cognitiondata1 (submittime, quizjson) VALUES (%s, %s)", (int(time.time()), resultJSON))
+    conn.commit()
     cur.close()
     conn.close()
 
