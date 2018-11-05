@@ -69,6 +69,10 @@
         Thank you for taking our listening test! Your answers have been recorded.
     </div>
 
+    <div id="errorStatement">
+        There was an error submitting your response. Please email avneeshsarwate@gmail.com
+    </div>
+
 
 
 
@@ -130,7 +134,8 @@
             var quizLog = JSON.stringify({'answers': answers, 'questions': JSON.parse(questionLog).questions, 'studentId': studentId, 'time': Date.now()});
             $.post("/cognitionTestResults/", {'quizResult': quizLog}, function(data){
                 $("#questionSpace").hide();
-                $("#finishedStatement").show();
+                if(data == "success") $("#finishedStatement").show();
+                else $("#errorStatement").show();
             });
         }
 
@@ -148,6 +153,7 @@
 
         $("#questionSpace").hide();
         $("#finishedStatement").hide();
+        $("#errorStatement").hide();
         $("#studentIdRequest").invisible();
         $(".target").invisible();
         $(".query").invisible();
@@ -168,7 +174,7 @@
             questionLog = data;
             spacerURLs = allURLs.spacers;
             questionSounds = arrayOf(questionURLS.length).map(e => ({}));
-            
+
             questionURLS.forEach(function(questionEntry, ind){
                 var t = questionEntry.targets;
                 var s = spacerURLs;
