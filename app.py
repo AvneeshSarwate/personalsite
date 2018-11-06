@@ -79,7 +79,7 @@ def cognitionexperimentURLs():
     numQuestions = 20
     urls = {'spacers': [spacer, spacer, spacer], 'questions': []}
     multiVoiceQuestions = random.sample([i for i in range(numQuestions)], numQuestions/2)
-    sameMelodyQuestions = random.sample([i for i in range(numQuestions)], numQuestions/2)
+    sameMelodyQuestions = random.sample(multiVoiceQuestions, numQuestions/4) + random.sample([i for i in range(numQuestions) if i not in multiVoiceQuestions], numQuestions/4)
     for q in range(numQuestions):
         isMultiVoiceQuestion = q in multiVoiceQuestions
         targets = []
