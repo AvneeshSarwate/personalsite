@@ -41,7 +41,8 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 26](https://avneeshsarwate.github.io/The_Force/?rippleDraw) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/rippleDraw.glsl)
 - [Shader 27](https://avneeshsarwate.github.io/The_Force/?fabricFlow) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fabricFlow.glsl)
 - [Shader 28](https://avneeshsarwate.github.io/The_Force/?windowWorld) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/windowWorld.glsl)
-
+- [Shader 29](https://avneeshsarwate.github.io/The_Force/?threadFlow) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/threadFlow.glsl)
+- [Shader 30](https://avneeshsarwate.github.io/The_Force/?traveler1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/traveler1.glsl)
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
