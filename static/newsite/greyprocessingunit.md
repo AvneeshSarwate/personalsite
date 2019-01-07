@@ -46,6 +46,8 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 31](https://avneeshsarwate.github.io/The_Force/?tiles1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/tiles1.glsl)
 - [Shader 32](https://avneeshsarwate.github.io/The_Force/?beachWaves) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/beachWaves.glsl)
 - [Shader 33](https://avneeshsarwate.github.io/The_Force/?daliCurtain) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/daliCurtain.glsl)
+- [Shader 34](https://avneeshsarwate.github.io/The_Force/?noisePlay1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/noisePlay1.glsl)
+
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
 
