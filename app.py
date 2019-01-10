@@ -64,6 +64,10 @@ def art():
 def greyprocessingunit():
     return render_template('subpage.html') 
 
+@app.route('/reflectionroom/', methods=['GET'])
+def reflectionroom():
+    return render_template('subpage.html') 
+
 @app.route('/soundcage/', methods=['GET'])
 def soundcage():
     return render_template('subpage.html')  
