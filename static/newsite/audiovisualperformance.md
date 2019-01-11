@@ -2,7 +2,7 @@
 ===============
 <div>[Back to main page](http://www.avneeshsarwate.com#)</div>
 
-Inspired by the likes of Oskar Fischinger and Ryoji Ikeda, I have been exploring audiovisual composition and improvisation. My goal was to create systems that would allow for realtime performance of music and graphics where, even if the music were improvised, the graphics would remain tightly synced to the music. In each piece, the graphical system is a program that listens to realtime MIDI input from the performance to modify the visuals in response to the music. The following in-progress pieces are the result of various strategies towards this aesthetic goal. More to come. 
+Inspired by the likes of [Oskar Fischinger](https://www.youtube.com/watch?v=6Xc4g00FFLk) and [Ryoji Ikeda](https://www.youtube.com/watch?v=Sa5g0kQrkUY), I have been exploring audiovisual composition and improvisation. My goal was to create systems that would allow for realtime performance of music and graphics where, even if the music were improvised, the graphics would remain tightly synced to the music. In each piece, the graphical system is a program that listens to realtime MIDI input from the performance to modify the visuals in response to the music. The following in-progress pieces are the result of various strategies towards this aesthetic goal. More to come. 
 
 ### <b>Piece 1</b>
 For this piece, I used my custom MIDI live-looping system to perform the piece. When melodies matching certain abstract melodic templates (defined via regular expressions) are played, the system triggers gestures in the flock of moving circles.
