@@ -70,6 +70,10 @@ def reflectionroom():
 
 @app.route('/soundcage/', methods=['GET'])
 def soundcage():
+    return render_template('subpage.html') 
+
+@app.route('/audiovisualperformance/', methods=['GET'])
+def audiovisualperformance():
     return render_template('subpage.html')  
 
 @app.route('/cognitionExperiment/', methods=['GET'])
