@@ -1,4 +1,4 @@
-<b>Art Works</b>
+<b>Works</b>
 ===============
 <div>[Back to main page](http://www.avneeshsarwate.com#)</div>
 
@@ -13,6 +13,9 @@ A prototype interactive music installation developed with [Ryan Rose](http://www
 
 ### <b>Reflection Room</b>
 An immersive experience developed with [Yo-Yo Lin](https://www.yoyolin.com/). [Project page](/reflectionroom)
+
+### <b>Audiovisual Performance</b>
+An in-progress series of audiovisual compositions [Project page](/audiovisualperformance#)
 
 ### <b>Interactive Graphics Experiments</b>
 Various prototypes and experiments. [Project page](/interactivevisuals#)
