@@ -10,6 +10,6 @@ $(function() {
 
         $("#renderedMarkdown").html(marked(data));
         $('title').html("Avneesh Sarwate - " + $('h1').children().html())
-        $("a").each(function(ind, elem) {if(elem.href.indexOf("#") < 0){elem.target = "_blank" }});
+        $("a").each(function(ind, elem) {if(elem.href.indexOf(window.location.origin) < 0){elem.target = "_blank" }});
     });
 });
