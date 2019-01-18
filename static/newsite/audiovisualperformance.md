@@ -23,7 +23,7 @@ In this piece, the notes played launch particles into a simple physics environme
 </figure>
 
 ### <b>Piece 3</b>
-The sound in this piece is generated from a polyphonic-glissando synthesizer. The green sliders adjust the pitch of each individual voice. The blue sliders control the parameters of a tape-feedback simulation device. The motion of the red circles mirrors the interpolation of the microtonal chords, and the warping of the texture is reflective of the tape feedback, and controleld by the same parameters. 
+The sound in this piece is generated from a polyphonic-glissando synthesizer. The green sliders adjust the pitch of each individual voice. The blue sliders control the parameters of a tape-feedback simulation device. The motion of the red circles mirrors the interpolation of the microtonal chords, and the warping of the texture is reflective of the tape feedback, and controlled by the same parameters. 
 
 <figure>
     <div class="iframe_container">
