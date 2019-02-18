@@ -14,7 +14,7 @@ For this piece, I used my custom MIDI live-looping system to perform the piece. 
 </figure>
 
 ### <b>Piece 2</b>
-In this piece, the notes played launch particles into a simple physics environment with invisible gravity wells. 
+In this piece, the notes played launch particles into a simple physics environment with visible and invisible gravity wells. The trajectories of the particles, as well as the positions of the gravity wells, are controlled by the notes played. 
 
 <figure>
     <div class="iframe_container">
@@ -30,6 +30,16 @@ The sound in this piece is generated from a polyphonic-glissando synthesizer. Th
         <iframe src="https://www.youtube.com/embed/lgswcWDTGNU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_video"></iframe>
     </div>
 </figure>
+
+### <b>Piece 4 (Hyperphase)</b>
+This piece is an electronic percussion piece that explores non-metrical rhythms and musical patterns that occur in continuous time (rather than discrete time). The piece is performed with a mix of [live coding](https://en.wikipedia.org/wiki/Live_coding) and MIDI controllers, with the live coding used to control the rhythms, and the MIDI controllers used to manipulate audio effects. The greyscale patterns visualize the rhythms played and their relative effects, while the color effects reflect the audio effects that are layered on top. This performance was part of the [live coding summer at IMPA](http://w3.impa.br/~vitorgr/livecode2019/index.html). A more detailed explanation of the technology behind the piece can be found in the [proceedings](http://w3.impa.br/~vitorgr/livecode2019/proceedings.html).
+
+<figure>
+    <div class="iframe_container">
+        <iframe src="https://www.youtube.com/embed/farVt4xQtbs" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="iframe_video"></iframe>
+    </div>
+</figure>
+
 
 
 <footer>*This site was built using  [jQuery](http://jquery.com/), [Marked](https://github.com/chjj/marked), and [Tufte CSS](https://github.com/edwardtufte/tufte-css)*</footer>
