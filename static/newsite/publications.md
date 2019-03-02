@@ -2,6 +2,10 @@
 ===============
 <div>[Back to main page](http://www.avneeshsarwate.com#)</div>
 
+Sarwate, Avneesh, Takahiko Tsuchiya, and Jason Freeman. "Collaborative Coding with Music: Two Case Studies with EarSketch." In Web Audio Conference. 2018. [PDF](/static/papers/EarSketch_Collab.pdf)
+
+Sarwate, A., Brunch, C., Freeman, J., & Siva, S. (2018, June). Grading at scale in earsketch. In Proceedings of the Fifth Annual ACM Conference on Learning at Scale (p. 50). ACM. [PDF](/static/papers/EarSketch_Autograder.pdf)
+
 Sarwate, A, Ryan Rose, Jason Freeman, and Jack Armitage. (2018). Performance Systems for Live Coders and Non-Coders. In NIME. [PDF](/static/papers/LiveCodersAndNonCoders.pdf) 
 
 Sarwate, A. (2016, October). Calcification and Hybrid Live-Coding. In Proceedings of the Audio Mostly 2016 (pp. 55-60). ACM. [PDF](/static/papers/CalcificationAndHybridLiveCoding.pdf)
