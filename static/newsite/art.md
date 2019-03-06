@@ -15,7 +15,7 @@ A prototype interactive music installation developed with [Ryan Rose](http://www
 An immersive experience developed with [Yo-Yo Lin](https://www.yoyolin.com/)
 
 ### <b>[Audiovisual Performance](/audiovisualperformance)</b>
-An in-progress series of audiovisual compositions
+An in-progress series of audiovisual compositions where real time graphics respond to music. 
 
 ### <b>[Interactive Graphics Experiments](/interactivevisuals)</b>
 Various prototypes and experiments
