@@ -51,6 +51,7 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 36](https://avneeshsarwate.github.io/The_Force/?foregroundDive) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/foregroundDive.glsl)
 - [Shader 37](https://avneeshsarwate.github.io/The_Force/?clock) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/clock.glsl)
 - [Shader 38](https://avneeshsarwate.github.io/The_Force/?fish) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fish.glsl)
+- [Shader 39](https://avneeshsarwate.github.io/The_Force/?slitScan1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/slitScan1.glsl)
 
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
