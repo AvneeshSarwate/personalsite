@@ -74,6 +74,10 @@ def soundcage():
 
 @app.route('/audiovisualperformance/', methods=['GET'])
 def audiovisualperformance():
+    return render_template('subpage.html') 
+
+@app.route('/familylightningtalk/', methods=['GET'])
+def familylightningtalk():
     return render_template('subpage.html')  
 
 @app.route('/cognitionExperiment/', methods=['GET'])
