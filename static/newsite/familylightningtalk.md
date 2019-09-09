@@ -82,7 +82,7 @@
 - Creative flow, happy accidents
 - Jamming with OTHER PEOPLE
 - Liveness => making "instruments"
-    - why not send people instruments? [like this one](https://avneeshsarwate.github.io/The_Force/?lightLine_slider)
+    - why not send people instruments? [like this one](localhost:6310?lightLine_slider)
 @avneeshsarwate
 
 .
