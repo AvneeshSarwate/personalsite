@@ -59,6 +59,10 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 44](https://avneeshsarwate.github.io/The_Force/?shadowReflect) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/shadowReflect.glsl)
 - [Shader 45](https://avneeshsarwate.github.io/The_Force/?grainPaint) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/grainPaint.glsl)
 - [Shader 46](https://avneeshsarwate.github.io/The_Force/?nils) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/nils.glsl)
+- [Shader 47](https://avneeshsarwate.github.io/The_Force/?inkGlitchVortex) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/inkGlitchVortex.glsl)
+- [Shader 48](https://avneeshsarwate.github.io/The_Force/?feedbackPathSpirals) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/feedbackPathSpirals.glsl)
+- [Shader 49](https://avneeshsarwate.github.io/The_Force/?radial) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/radial.glsl)
+- [Shader 50](https://avneeshsarwate.github.io/The_Force/?fadeawaySnake) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fadeawaySnake.glsl)
 
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
