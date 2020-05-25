@@ -63,6 +63,9 @@ Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing y
 - [Shader 48](https://avneeshsarwate.github.io/The_Force/?feedbackPathSpirals) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/feedbackPathSpirals.glsl)
 - [Shader 49](https://avneeshsarwate.github.io/The_Force/?radial) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/radial.glsl)
 - [Shader 50](https://avneeshsarwate.github.io/The_Force/?fadeawaySnake) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/fadeawaySnake.glsl)
+- [Shader 51](https://avneeshsarwate.github.io/The_Force/?grainBrush) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/grainBrush.glsl)
+- [Shader 52](https://avneeshsarwate.github.io/The_Force/?waterfallStream) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/waterfallStream.glsl)
+- [Shader 53](https://avneeshsarwate.github.io/The_Force/?plotter1) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/plotter1.glsl)
 
 
 I plan to add more shaders to this series, and to possibly add browser-based interactions to existing shaders (Shader 1 currently interacts with mouse clicks).
