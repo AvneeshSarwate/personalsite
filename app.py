@@ -29,7 +29,7 @@ def home():
 
 @app.route('/newsite/', methods=['GET'])
 def newsite():
-    print "got to newsite"
+    print("got to newsite")
     return render_template('newsite.html')
 
 @app.route('/shader/')
