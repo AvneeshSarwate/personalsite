@@ -1,12 +1,10 @@
-from flask import Flask, render_template, request, Response
+from flask import Flask, redirect, render_template, request, Response
 from flask_compress import Compress
 import re
 import os
 import mimetypes
 import json
 import random
-import psycopg2 
-import time
 from werkzeug.middleware.proxy_fix import ProxyFix
 
 dburl = 'postgres://lwjyqvnvbnxlac:e04dc8370c3e4ac49ef541851b9523e0115c2993881351d558c0087de2de6a40@ec2-54-83-49-109.compute-1.amazonaws.com:5432/d2mmfjc0ic8kjg'
@@ -123,32 +121,6 @@ def cognitionexperimentURLs():
 
     return json.dumps(urls)
 
-@app.route('/cognitionTestResults/', methods=['POST'])
-def cognitionTestResults():
-    resultJSON = request.form['quizResult']
-    quizResults.append(resultJSON)
-    with open("quizResults.txt", "a+") as resultFile:
-        resultFile.write("\n" + resultJSON + "\n")
-    conn = psycopg2.connect(dburl, sslmode='require')
-    cur = conn.cursor()
-    cur.execute("INSERT INTO cognitiondata1 (submittime, quizjson) VALUES (%s, %s)", (int(time.time()), resultJSON))
-    conn.commit()
-    cur.close()
-    conn.close()
-
-    return "success"
-
-
-
-@app.route('/getAllCognitionTestResults/', methods=['GET'])
-def getAllCognitionTestResults():
-    conn = psycopg2.connect(dburl, sslmode='require')
-    cur = conn.cursor()
-    cur.execute("SELECT quizjson FROM cognitiondata1;")
-    dbQuizResults = cur.fetchall()
-    cur.close()
-    conn.close()
-    return json.dumps(dbQuizResults)
 
 @app.route('/getAllCognitionTestResultsFile/', methods=['GET'])
 def getAllCognitionTestResultsFile():
