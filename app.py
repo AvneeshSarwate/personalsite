@@ -7,6 +7,7 @@ import json
 import random
 import psycopg2 
 import time
+from werkzeug.middleware.proxy_fix import ProxyFix
 
 dburl = 'postgres://lwjyqvnvbnxlac:e04dc8370c3e4ac49ef541851b9523e0115c2993881351d558c0087de2de6a40@ec2-54-83-49-109.compute-1.amazonaws.com:5432/d2mmfjc0ic8kjg'
 
@@ -16,6 +17,19 @@ BUFF_SIZE = 10 * MB
 quizResults = []
 
 app = Flask(__name__)
+
+
+# Apply ProxyFix to handle Heroku's reverse proxy
+app.wsgi_app = ProxyFix(app.wsgi_app, x_proto=1, x_host=1)
+
+@app.before_request
+def enforce_https():
+    """Redirect HTTP traffic to HTTPS"""
+    if request.headers.get("X-Forwarded-Proto", "http") != "https":
+        url = request.url.replace("http://", "https://", 1)
+        return redirect(url, code=301)
+
+
 Compress(app)
 
 @app.after_request
