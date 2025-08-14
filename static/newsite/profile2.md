@@ -10,7 +10,7 @@ The best way to get a sense of what I'm currently interested and how I got there
  - [New Inc Demo Day talk](https://www.youtube.com/live/SERpjuB9hBM?si=Xe7n3UT0Ax21BlT_&t=15458) - which covers my creative history and current project on audiovisual composition.
  - [South Park Commons demo](https://youtu.be/XPd1fQA0PjU) - which discusses how I think about building software tools for art, and covers my history of work from a more design oriented perspective.
 
-## **Quick Intro** (older stuf, 2017-2021)
+## **Quick Intro** (older stuff, 2017-2021)
 In particular, I'm interested in [audiovisual live performance](/audiovisualperformance#)  and have a background in designing [interfaces for musical performance](/electronicimprovisation#) (for which I have some [publications](/publications#)). I'm also interested in [interactive graphics](/interactivevisuals#) more generally. 
 
 I am also a member of [Grind Arts Company](http://www.grindarts.com/) and an alumnus of the [Princeton Laptop Orchestra](http://plork.princeton.edu/index.php).
