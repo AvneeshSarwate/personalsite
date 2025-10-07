@@ -11,9 +11,9 @@ For each shader, two links are provided - the live rendering and the file's Git 
 Pressing Ctrl+Shift will reveal/hide the text of the fragment shader, allowing you to live code it. Some utility functions common across the different shaders are defined [here](https://github.com/AvneeshSarwate/The_Force/blob/master/shaders/header.frag).
 
 
-### <b>Shaders (Desktop Chrome only)</b>
-- [Shader 0](https://avneeshsarwate.github.io/The_Force/?dancingFabric) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/dancingFabric.glsl)
-- [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl) (Interacts with  mouse clicks and webcam input)
+### <b>Shaders </b>
+- [Shader 0](https://avneeshsarwate.github.io/The_Force/?dancingFabric) [history](https://github.com/AvneeshSarwate/The_Force/blob/master/forceCode/dancingFabric.glsl) (Desktop only)
+- [Shader 1](https://avneeshsarwate.github.io/The_Force/?liquidGridSmooth) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/liquidGridSmooth.glsl) (Desktop only) (Interacts with  mouse clicks and webcam input)
 - [Shader 2](https://avneeshsarwate.github.io/The_Force/?circleSlices) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/circleSlices.glsl)
 - [Shader 3](https://avneeshsarwate.github.io/The_Force/?wanderingBlotches) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/wanderingBlotches.glsl)
 - [Shader 4](https://avneeshsarwate.github.io/The_Force/?warpFeedback) [history](https://github.com/AvneeshSarwate/The_Force/commits/master/forceCode/warpFeedback.glsl)

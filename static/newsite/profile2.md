@@ -1,14 +1,14 @@
 <b>Avneesh Sarwate</b>
 ===============
 
-I'm a software engineer and musician working with computer music and [interactive art](/art#), based in NYC.
+I'm a software engineer, musician, interface designer, and [visual artist](/art#) and am particularly interested in audiovisual live performance and improvisation. I like to thinking of programming systems/lanugages from an interface-design perspective, especially as they apply to art making, and have recently started exploring the affordances of coding agents for creative work. I am based in NYC.
 
 You can find me on [Instagram](https://www.instagram.com/avneeshsarwate/), [GitHub](https://github.com/AvneeshSarwate), [LinkedIn](https://www.linkedin.com/in/avneesh-sarwate-16172662), and [GMail](mailto:avneeshsarwate@gmail.com). 
 
-## **Recent short talks** (newest stuff)
-The best way to get a sense of what I'm currently interested and how I got there is via these two talks from 2025 (~7 minutes each).
+## **Recent short talks** (2025)
+The best way to get a sense of what I'm currently interested and how I got there is via these two talks (~7 minutes each).
  - [New Inc Demo Day talk](https://www.youtube.com/live/SERpjuB9hBM?si=Xe7n3UT0Ax21BlT_&t=15458) - which covers my creative history and current project on audiovisual composition.
- - [South Park Commons demo](https://youtu.be/XPd1fQA0PjU) - which discusses how I think about building software tools for art, and covers my history of work from a more design oriented perspective.
+ - [South Park Commons demo](https://youtu.be/XPd1fQA0PjU) - which discusses how I think about building software tools for art, and covers my history of work from a more interface design oriented perspective.
 
 ## **Quick Intro** (older stuff, 2017-2021)
 In particular, I'm interested in [audiovisual live performance](/audiovisualperformance#)  and have a background in designing [interfaces for musical performance](/electronicimprovisation#) (for which I have some [publications](/publications#)). I'm also interested in [interactive graphics](/interactivevisuals#) more generally. 
