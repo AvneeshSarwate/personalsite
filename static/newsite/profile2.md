@@ -1,7 +1,7 @@
 <b>Avneesh Sarwate</b>
 ===============
 
-I'm a software engineer, musician, interface designer, and [visual artist](/art#) and am particularly interested in audiovisual live performance and improvisation. I like to thinking of programming systems/lanugages from an interface-design perspective, especially as they apply to art making, and have recently started exploring the affordances of coding agents for creative work with projects like [this piano roll chatbot](https://avneeshsarwate.github.io/pianoRollChatbot/) and [this state visualizer for OpenAI Codex](https://github.com/avneeshSarwate/codex). 
+I'm a software engineer, musician, interface designer, and [visual artist](/art#) and am particularly interested in audiovisual live performance and improvisation. I like to thinking of [programming systems/lanugages from an interface-design perspective](https://www.instagram.com/p/DbbYeqfpODk/), especially as they apply to art making, and have recently started exploring the affordances of coding agents in these types of environments. 
 
 I am based in NYC.
 
